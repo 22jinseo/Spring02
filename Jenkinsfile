@@ -8,7 +8,7 @@ pipeline {
         APP_NAME = 'ex02-app'
         DOCKER_TAG = 'latest'
         IMAGE_NAME = "22jinseo/${APP_NAME}:${DOCKER_TAG}"
-        TARGET_HOST = '192.168.56.107'
+        TARGET_HOST = '192.168.56.107'  
         TARGET_USER = 'vagrant'
         PORT = '8081'
     }
