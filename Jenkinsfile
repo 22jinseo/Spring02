@@ -23,12 +23,12 @@ pipeline {
         
         stage('3. Docker Build') {
             steps {
-                sh 'docker build -t ex01-app:latest .'
+                sh 'docker build -t ex02-app:latest .'
             }
         }
 
         stage('4. Docker Push') {
-            steps { 
+            steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'dockerhub-cred',
                     usernameVariable: 'DOCKERHUB_USERNAME',
